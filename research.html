@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<title>About | Souvik Das</title>
+
+<link rel="icon" type="image/jpeg" href="SD.jpg">
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.8;
+}
+
+/* ================= NAVIGATION ================= */
+
+nav{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 40px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    z-index:1000;
+}
+
+.logo a{
+    color:white;
+    text-decoration:none;
+    font-size:22px;
+    font-weight:700;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:22px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:17px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#FFD54F;
+}
+
+/* ================= HEADER ================= */
+
+header{
+
+    height:40vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)),
+    url("sun.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    text-align:center;
+}
+
+header h1{
+
+    font-size:50px;
+    font-weight:700;
+
+}
+
+header p{
+
+    font-size:20px;
+
+}
+
+/* ================= CONTENT ================= */
+
+section{
+
+    max-width:1100px;
+    margin:auto;
+    padding:50px 30px 70px;
+
+}
+
+.card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    margin-bottom:35px;
+
+}
+
+.card h2{
+
+    color:#003366;
+
+    margin-bottom:18px;
+
+    border-bottom:2px solid #e6e6e6;
+
+    padding-bottom:8px;
+
+}
+
+.card ul{
+
+    padding-left:25px;
+
+}
+
+.card li{
+
+    margin-bottom:10px;
+
+}
+
+a.cv{
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    padding:12px 28px;
+
+    background:#003366;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+a.cv:hover{
+
+    background:#0055aa;
+
+}
+
+/* ========= ADD EDUCATION CSS HERE ========= */
+
+.education{
+    margin-top:10px;
+}
+
+.edu-item{
+    display:flex;
+    align-items:flex-start;
+    gap:35px;
+    padding:22px 0;
+    border-bottom:1px solid #e6e6e6;
+}
+
+.edu-item:last-child{
+    border-bottom:none;
+    padding-bottom:0;
+}
+
+.edu-year{
+    width:170px;
+    flex-shrink:0;
+    font-weight:600;
+    color:#003366;
+    font-size:18px;
+}
+
+.edu-details{
+    flex:1;
+}
+
+.edu-details h3{
+    margin:0 0 8px;
+    color:#003366;
+    font-size:22px;
+    font-weight:600;
+}
+
+.edu-details p{
+    margin:5px 0;
+    color:#555;
+}
+
+/* ========= END EDUCATION CSS ========= */
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+header{
+
+height:40vh;
+
+}
+
+header h1{
+
+font-size:36px;
+
+}
+
+section{
+
+padding:35px 18px;
+
+}
+
+.card{
+
+padding:25px;
+
+}
+
+nav{
+
+padding:15px 20px;
+
+}
+.edu-item{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .edu-year{
+        width:auto;
+    }
+
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    background:#002244;
+    color:#ffffff;
+
+    text-align:center;
+
+    padding:30px 20px;
+
+    margin-top:60px;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+}
+
+footer p{
+
+    margin:8px 0;
+
+}
+
+footer a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+footer a:hover{
+
+    color:#FFD54F;
+
+}
+
+footer i{
+
+    margin-right:8px;
+
+    color:#FFD54F;
+
+    font-size:16px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+
+<a href="index.html">Souvik Das</a>
+
+</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About Me</a></li>
+
+<li><a href="research.html">Research</a></li>
+
+</ul>
+
+</nav>
+
+<header>
+
+<section>
+<div>
+<div class="card">
+
+<h2>Peer-Reviewed Publications</h2>
+
+<h3>Journal Publications</h3>
+
+<ol>
+
+<li>
+
+<strong>S. Das</strong> and P. K. Karmakar,
+"Non-Planar Magnetoactive GES-Based Solar Plasma Stability,"
+<em>Journal of Astrophysics and Astronomy</em>,
+<strong>43</strong>(2), 44 (2022).<br>
+
+<strong>DOI:</strong>
+<a href="https://doi.org/10.1007/s12036-022-09838-3" target="_blank">
+https://doi.org/10.1007/s12036-022-09838-3
+</a>
+
+</li>
+
+<br>
+
+<li>
+
+<strong>S. Das</strong>, A. Atteya, and P. K. Karmakar,
+"Acoustic Waves in the Jovian Dusty Magnetosphere: A Brief Review and Meta-analysis,"
+<em>Reviews of Modern Plasma Physics</em>,
+<strong>6</strong>, 35 (2022).<br>
+
+<strong>DOI:</strong>
+<a href="https://doi.org/10.1007/s41614-022-00101-4" target="_blank">
+https://doi.org/10.1007/s41614-022-00101-4
+</a>
+
+</li>
+
+<br>
+
+<li>
+
+<strong>S. Das</strong>, A. Atteya, and P. K. Karmakar,
+"A Theoretic Analysis of Magnetoactive GES-Based Turbulent Solar Plasma Instability,"
+<em>Monthly Notices of the Royal Astronomical Society</em>,
+<strong>523</strong>(4), 5635–5660 (2023).<br>
+
+<strong>DOI:</strong>
+<a href="https://doi.org/10.1093/mnras/stad1664" target="_blank">
+https://doi.org/10.1093/mnras/stad1664
+</a>
+
+</li>
+
+<br>
+
+<li>
+
+<strong>S. Das</strong> and P. K. Karmakar,
+"Solar GES-Structure Modified with EiBI Gravity,"
+<em>Chinese Journal of Physics</em>,
+<strong>91</strong>, 157–166 (2024).<br>
+
+<strong>DOI:</strong>
+<a href="https://doi.org/10.1016/j.cjph.2024.05.008" target="_blank">
+https://doi.org/10.1016/j.cjph.2024.05.008
+</a>
+
+</li>
+
+<br>
+
+<li>
+
+<strong>S. Das</strong> and P. K. Karmakar,
+"Stability and Wave Dynamics in Polytropic Eddington-inspired Born–Infeld Gravitating Solar Plasmas,"
+<em>Physical Review E</em>,
+<strong>113</strong>, 015205 (2026).<br>
+
+<strong>DOI:</strong>
+<a href="https://doi.org/10.1103/2djh-d4qh1" target="_blank">
+https://doi.org/10.1103/2djh-d4qh1
+</a>
+
+</li>
+
+<br>
+
+<li>
+
+<strong>S. Das</strong> and P. K. Karmakar,
+"Analysis of Solar Surface Oscillations and Energy Transport with Bispectral Electronic Thermostatistics,"
+<em>The Astrophysical Journal</em>,
+<strong>997</strong>(2), 232 (2026).<br>
+
+<strong>DOI:</strong>
+<a href="https://doi.org/10.3847/1538-4357/ae25ec" target="_blank">
+https://doi.org/10.3847/1538-4357/ae25ec
+</a>
+
+</li>
+
+<br>
+
+<li>
+
+<strong>S. Das</strong> and P. K. Karmakar,
+"A Parametric Analysis of Ion-Acoustic Wave Propagation in Viscous Nonthermal Solar Wind Plasmas,"
+<em>Advances in Space Research</em>,
+<strong>77</strong>(4), 5475–5491 (2026).<br>
+
+<strong>DOI:</strong>
+<a href="https://doi.org/10.1016/j.asr.2025.12.062" target="_blank">
+https://doi.org/10.1016/j.asr.2025.12.062
+</a>
+
+</li>
+
+</ol>
+
+</div>
+
+<div class="card">
+
+<h2>Book Chapter Publication</h2>
+
+<ol>
+
+<li>
+
+<strong>S. Das</strong>, A. Zaved, and P. K. Karmakar,
+
+"Neutrino in Core-Collapse Supernova: Analysis, Implication and Application,"
+
+in <em>Advances in Physical Sciences: Theories, Applications and Innovations</em>,
+
+J. D. Ray and D. Borah (Eds.),
+
+Chapter 12, pp. 110–123,
+
+National Press Associates, 2026.
+
+<br>
+
+<strong>ISBN:</strong> 978-93-7343-604-3
+
+</li>
+
+</ol>
+
+</div>
+
+<footer>
+
+    <p>
+
+        <i class="fa-solid fa-envelope"></i>
+
+        <a href="mailto:souphys@tezu.ernet.in">
+            souphys@tezu.ernet.in
+        </a>
+
+        &nbsp; | &nbsp;
+
+        <a href="mailto:souphys97@gmail.com">
+            souphys97@gmail.com
+        </a>
+
+    </p>
+
+    <p>
+
+        &copy; 2026 Souvik Das
+
+        &nbsp; | &nbsp;
+
+         Hosted on
+
+        <a href="https://pages.github.com/" target="_blank">
+            GitHub Pages
+        </a>
+
+    </p>
+
+</footer>
+
+</body>
+
+</html>
