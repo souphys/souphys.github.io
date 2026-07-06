@@ -231,44 +231,94 @@ a.cv:hover{
 
 /* ================= MOBILE ================= */
 
-@media(max-width:768px){
+@media (max-width:768px){
 
-header{
-
-height:40vh;
-
-}
-
-header h1{
-
-font-size:36px;
-
-}
-
-section{
-
-padding:35px 18px;
-
-}
-
-.card{
-
-padding:25px;
-
-}
-
-nav{
-
-padding:15px 20px;
-
-}
-.edu-item{
+    nav{
+        padding:15px;
         flex-direction:column;
-        gap:10px;
+        gap:12px;
+        text-align:center;
+    }
+
+    .logo a{
+        font-size:22px;
+    }
+
+    nav ul{
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:18px;
+    }
+
+    nav ul li{
+        margin:0;
+    }
+
+    nav ul li a{
+        font-size:16px;
+    }
+
+    header{
+        height:38vh;
+        padding:20px;
+    }
+
+    header h1{
+        font-size:36px;
+    }
+
+    header p{
+        font-size:17px;
+    }
+
+    section{
+        padding:35px 18px;
+    }
+
+    .card{
+        padding:22px;
+        margin-bottom:25px;
+        border-radius:12px;
+    }
+
+    .card h2{
+        font-size:24px;
+    }
+
+    .card p,
+    .card li{
+        font-size:15px;
+        line-height:1.7;
+    }
+
+    .edu-item{
+        flex-direction:column;
+        gap:8px;
     }
 
     .edu-year{
         width:auto;
+        font-size:17px;
+    }
+
+    .edu-details h3{
+        font-size:20px;
+    }
+
+    a.cv{
+        display:block;
+        width:100%;
+        text-align:center;
+    }
+
+    footer{
+        font-size:14px;
+        padding:25px 15px;
+    }
+
+    footer p{
+        line-height:1.8;
     }
 
 }
