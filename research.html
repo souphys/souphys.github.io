@@ -229,46 +229,64 @@ a.cv:hover{
 
 /* ========= END EDUCATION CSS ========= */
 
-/* ================= MOBILE ================= */
+@media (max-width:768px){
 
-@media(max-width:768px){
-
-header{
-
-height:40vh;
-
-}
-
-header h1{
-
-font-size:36px;
-
-}
-
-section{
-
-padding:35px 18px;
-
-}
-
-.card{
-
-padding:25px;
-
-}
-
-nav{
-
-padding:15px 20px;
-
-}
-.edu-item{
+    nav{
+        padding:15px;
         flex-direction:column;
-        gap:10px;
+        gap:12px;
+        text-align:center;
     }
 
-    .edu-year{
-        width:auto;
+    .logo a{
+        font-size:22px;
+    }
+
+    nav ul{
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:18px;
+        padding:0;
+    }
+
+    nav ul li{
+        margin:0;
+    }
+
+    nav ul li a{
+        font-size:16px;
+    }
+
+    header{
+        height:35vh;
+        padding:20px;
+    }
+
+    header h1{
+        font-size:34px;
+    }
+
+    section{
+        padding:30px 15px;
+    }
+
+    .card{
+        padding:22px;
+    }
+
+    .card h2{
+        font-size:25px;
+    }
+
+    .card li{
+        font-size:15px;
+        line-height:1.7;
+    }
+
+    footer{
+        font-size:14px;
+        padding:25px 15px;
     }
 
 }
@@ -346,6 +364,8 @@ footer i{
 
 <li><a href="research.html">Research</a></li>
 
+</ul>
+
 </nav>
 
 <header>
@@ -359,7 +379,6 @@ footer i{
 </header>
 
 <section>
-<div>
 <div class="card">
 
 <h2>Journal Publication</h2>
